@@ -12,6 +12,7 @@
 
 <!-- CURRENCY SYMBOLS -->
 <!ENTITY dollar "&#36;"> <!-- Dollar Symbol ($) -->
+<!ENTITY cent "&#162;"> <!-- Cent Symbol -->
 
 <!-- DIVISION SYMBOLS -->
 <!ENTITY sec "&#167;&#160;"> <!-- Section symbol followed by non-breaking space -->

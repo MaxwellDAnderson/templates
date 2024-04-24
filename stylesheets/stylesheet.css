@@ -1,0 +1,29 @@
+@font-face {
+  font-family:"Century-Expanded-Regular";
+  src: local("fonts/century-expanded-regular.otf"), 
+  url("../fonts/century-expanded-regular.otf");
+}
+
+@font-face {
+  font-family:"Century-Expanded-Italic";
+  src: local("fonts/century-expanded-italic.otf"),
+  url("../fonts/century-expanded-italic.otf");
+}
+
+@font-face {
+  font-family: "Century-Expanded-Bold";
+  src: local("fonts/century-expanded-bold.otf"),
+  url("../fonts/century-expanded-bold.otf");
+}
+
+
+/* SIDENOTE / MARGIN NOTE */
+
+aside, .sidenote {
+  display: inline;
+  float:right;
+  position:relative;
+  width:20vw;
+  margin-right:-22vw;
+  font-size:9pt
+}
