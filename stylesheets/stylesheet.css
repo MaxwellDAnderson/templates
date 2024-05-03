@@ -19,11 +19,32 @@
 
 /* SIDENOTE / MARGIN NOTE */
 
+.annotated {
+  width:68%;
+}
+
 aside, .sidenote {
   display: inline;
   float:right;
   position:relative;
-  width:20vw;
-  margin-right:-22vw;
+  width:30%;
+  margin-right:-32%;
   font-size:9pt
 }
+
+b, strong {
+  font-family:Century-Expanded-Bold;
+}
+
+body {
+  font-family:Century-Expanded-Regular;
+}
+
+i {
+  font-family:Century-Expanded-Italic;
+}
+
+sup {
+  font-size:9pt;
+}
+
