@@ -1,3 +1,5 @@
+/* TYPEFACES */
+
 @font-face {
   font-family:"Century-Expanded-Regular";
   src: local("fonts/century-expanded-regular.otf"), 
@@ -15,6 +17,32 @@
   src: local("fonts/century-expanded-bold.otf"),
   url("../fonts/century-expanded-bold.otf");
 }
+
+
+/*  */
+
+@page {
+  size: 8.5in 5.5in;
+  break-inside:avoid;
+  margin:1in;
+
+  @bottom-center {
+    content: counter(page)
+  }
+  @top-right {
+    content: string(title)
+  }
+
+  @footnote {
+    float:bottom;
+  }
+}
+
+
+
+
+
+
 
 
 /* SIDENOTE / MARGIN NOTE */
@@ -38,35 +66,27 @@ b, strong {
 
 body {
   font-family:Century-Expanded-Regular;
-  font-size:12pt
+}
+
+.footnote {
+  float:footnote;
+}
+
+::footnote-call {
+  font-size:8pt;
+  vertical-align:super;
+}
+
+::footnote-marker {
+  font-size:8pt;
+  vertical-align:super;
 }
 
 i {
-  display:inline;
   font-family:Century-Expanded-Italic;
-}
-
-p {
-  display:block;
 }
 
 sup {
   font-size:9pt;
-}
-
-table {
-  border-collapse:collapse;
-  table-layout:auto;
-}
-
-thead > tr > th {
-  font-weight:bold;
-  padding-left:5px;
-  padding-right:5px
-}
-
-tbody > tr > td {
-  padding:5px;
-  text-align:left;
 }
 
