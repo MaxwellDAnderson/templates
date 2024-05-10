@@ -38,12 +38,73 @@ b, strong {
 
 body {
   font-family:Century-Expanded-Regular;
-  font-size:12pt
+  font-size:12pt;
+}
+
+del {
+  background-color: pink;
+  text-decoration: line-through;
+}
+
+h1 {
+  display:block;
+  font-family:Century-Expanded-Bold;
+  font-size:12pt;
+  font-weight:bold;
+  text-decoration:underline;
+  text-transform:uppercase;
+}
+
+h2 {
+  display:block;
+  font-family:Century-Expanded-Bold;
+  font-size:12pt;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+h3 {
+  display:block;
+  font-family:Century-Expanded-Bold;
+  font-size:12pt;
+  font-weight:bold;
+  font-variant:small-caps;
+  text-transform:capitalize;
+}
+
+h4 {
+  display:block;
+  font-family:Century-Expanded-Bold;
+  font-size:12pt;
+  font-variant:small-caps;
+  font-weight:bold;
+}
+
+h5 {
+  display:block;
+  font-family:Century-Expanded-Italic;
+  font-size:12pt;
+  font-variant:normal;
+  font-weight:bold;
+}
+
+h6 {
+  display:block;
+  font-family:Century-Expanded-Italic;
+  font-size:12pt;
+  font-variant:normal;
+  font-weight:bold;
 }
 
 i {
   display:inline;
   font-family:Century-Expanded-Italic;
+}
+
+ins {
+  background-color: #4dffb8;
+  
+  text-decoration:none;
 }
 
 p {
