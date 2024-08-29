@@ -16,6 +16,29 @@
   url("../fonts/century-expanded-bold.otf");
 }
 
+@Font-face {
+  font-family: "Fira-Code-Regular";
+  src: local("fonts/FiraCode-Regular.ttf"),
+  url("../fonts/FiraCode-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fira-Code-Bold";
+  src: local("fonts/FiraCode-Bold.ttf"),
+  url("../fonts/FiraCode-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Fira-Code-Light";
+  src: local("fonts/FiraCode-Light.ttf"),
+  url("../fonts/FiraCode-Light");
+}
+
+@font-face {
+  font-family: "Fira-Code-Medium";
+  src: local("fonts/FiraCode-Medium.ttf"),
+  url("../fonts/FiraCode-Medium.ttf");
+}
 
 /* SIDENOTE / MARGIN NOTE */
 
@@ -39,6 +62,14 @@ b, strong {
 body {
   font-family:Century-Expanded-Regular;
   font-size:12pt;
+}
+
+code {
+  background-color:#f2f1f1;
+  font-family: Fira-Code-Medium;
+  font-size:10pt;
+
+
 }
 
 del {
@@ -123,11 +154,15 @@ table {
 thead > tr > th {
   font-weight:bold;
   padding-left:5px;
-  padding-right:5px
+  padding-right:5px;
 }
 
 tbody > tr > td {
   padding:5px;
   text-align:left;
+}
+
+table.noDownRule tr {
+  border-bottom: 1pt solid black;
 }
 
