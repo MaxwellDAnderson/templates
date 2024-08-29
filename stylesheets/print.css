@@ -22,7 +22,7 @@
 /*  */
 
 @page {
-  size: 8.5in 5.5in;
+  size: 8.5in 11in;
   break-inside:avoid;
   margin:1in;
 
@@ -33,16 +33,10 @@
     content: string(title)
   }
 
-  @footnote {
+  /* @footnote {
     float:bottom;
-  }
+  } */
 }
-
-
-
-
-
-
 
 
 /* SIDENOTE / MARGIN NOTE */
