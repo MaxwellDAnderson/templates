@@ -23,19 +23,18 @@
 
 @page {
   size: 8.5in 11in;
-  break-inside:avoid;
-  margin:1in;
-
-  @bottom-center {
-    content: counter(page)
-  }
-  @top-right {
-    content: string(title)
-  }
+  break-inside: avoid;
+  margin: 0.25in;
 
   /* @footnote {
     float:bottom;
   } */
+}
+
+address > span {
+  display: block;
+  font-family: Century-Expanded-Regular;
+  font-style: normal;
 }
 
 
@@ -55,11 +54,15 @@ aside, .sidenote {
 }
 
 b, strong {
-  font-family:Century-Expanded-Bold;
+  font-family: Century-Expanded-Bold;
 }
 
 body {
-  font-family:Century-Expanded-Regular;
+  font-family: Century-Expanded-Regular;
+}
+
+#dateline1 {
+  font-variant: small-caps;
 }
 
 .footnote {
@@ -72,15 +75,22 @@ body {
 }
 
 ::footnote-marker {
-  font-size:8pt;
-  vertical-align:super;
+  font-size: 8pt;
+  vertical-align: super;
 }
 
 i {
-  font-family:Century-Expanded-Italic;
+  font-family: Century-Expanded-Italic;
+}
+
+p {
+  padding-left: 0.25in;
+  margin-right: 0.25in;
+  margin-top: 0.25in;
+  margin-bottom: 0.25in; 
 }
 
 sup {
-  font-size:9pt;
+  font-size: 9pt;
 }
 

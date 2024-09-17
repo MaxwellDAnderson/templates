@@ -17,7 +17,14 @@
     <p class="annotated">Welcome to this webpage. It is a very cool webpage. <span class="sidenote">Hello! This is an example of a side note!</span> Lorem ipsum Lorem  ipsum.</p>
     <p>One can also make <ins>insertions</ins> and <del>deletions</del>.</p>
     
+    <div id="blockquote">
+      <p>
+        You can also use blockquotes:
+        <blockquote>Notice how the text is indented both on the left and on the right. This is to ensure there is a visual distinction between the main text and the quoted text.</blockquote>
+      </p>
+    </div>
     <div class="table">
+      <h1>Tables</h1>
       <p>The following is an example table.</p>
       <table>
         <thead>
@@ -35,7 +42,7 @@
       </table>
     </div>
 
-    <div class="table">
+    <div class="table-no-down-rule">
       <p>The following is an example table with the &ldquo;no down rule&rdquo; style (<i>i.e.</i>, no vertical lines). This can be used by adding the <code>noDownRule</code> class to the <code>table</code> element.</p>
       <table class="noDownRule">
         <thead>
@@ -52,5 +59,28 @@
         </tbody>
       </table>
     </div>
+
+    <div class="lists">
+      <h1>Lists</h1>
+      <section>
+        <ol class="enum-block">
+          <li>Hello world:
+            <ol class="enum-block">
+              <li>This is the second level</li>
+              <li>Additional
+                <ol class="enum-block">
+                  <li>Nice!</li>
+                  <li>Cool list!</li>
+                </ol>
+              </li>
+              <li>Very cool!</li>
+            </ol>
+          </li>
+          <li>Second list item</li>
+        </ol>
+      </section>
+    </div>
+
+    
   </body>
 </html>
