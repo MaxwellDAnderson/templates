@@ -13,17 +13,23 @@
     <h5>Heading Text 5</h5>
     <h6>Heading text 6</h6>
 
-    <p>The following is an example of an annotated paragraph. Notice how margin notes are used:</p>
-    <p class="annotated">Welcome to this webpage. It is a very cool webpage. <span class="sidenote">Hello! This is an example of a side note!</span> Lorem ipsum Lorem  ipsum.</p>
-    <p>One can also make <ins>insertions</ins> and <del>deletions</del>.</p>
+    <div id="annotations">
+      <p>The following is an example of an annotated paragraph. Notice how margin notes are used:</p>
+      <p class="annotated">Welcome to this webpage. It is a very cool webpage. <span class="sidenote">Hello! This is an example of a side note!</span> Lorem ipsum Lorem  ipsum. Utilize the <code>.annotated</code> class on either the <code>body</code> or <code>p</code> element to ensure the main text has a reduced width. Then, utilize the <code>.sidenote</code> class on, for example, a <code>span</code> element.</p>
+    </div>
+    
+    <div id="markup">
+      <p>One can also make <ins>insertions</ins> and <del>deletions</del>.</p>
+    </div>
     
     <div id="blockquote">
       <p>
         You can also use blockquotes:
         <blockquote>Notice how the text is indented both on the left and on the right. This is to ensure there is a visual distinction between the main text and the quoted text.</blockquote>
+        <blockquote class="first-line-indent">Utilizing the <code>.first-line-indent</code> class indents the first line of the blockquote by 0.25in.</blockquote>
       </p>
     </div>
-    <div class="table">
+    <div class="tables">
       <h1>Tables</h1>
       <p>The following is an example table.</p>
       <table>
@@ -81,6 +87,66 @@
       </section>
     </div>
 
+    <div id="checkboxes">
+      <h1>Checkboxes</h1>
+      <p>
+        <button id="check-all" type="button">Check All</button>
+        <button id="clear-all" type="button">Clear All</button>
+      </p>     
+      <p>
+        <ul>
+          <li>
+            <label for="checkCategoryA">
+              <input
+                id="checkCategoryA"
+                type="checkbox"
+                name="checkCategoryA"
+                checked="checked">
+              Category A
+            </label>
+          </li>
+          <li>
+            <label for="checkCategoryB">
+              <input
+                id="checkCategoryB"
+                type="checkbox"
+                name="checkCategoryB"
+                checked="checked">
+              Category B
+            </label>
+          </li>
+        </ul>
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-category="A">
+            <td>Item 1</td>
+            <td>Category A</td>
+          </tr>
+          <tr data-category="B">
+            <td>Item 2</td>
+            <td>Category B</td>
+          </tr>
+          <tr data-category="A">
+            <td>Item 3</td>
+            <td>Category A</td>
+          </tr>
+          <tr data-category="B">
+            <td>Item 4</td>
+            <td>Category B</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     
   </body>
+  <script src="scripts/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="scripts/check-show-hide.js" type="text/javascript"></script>
 </html>

@@ -111,11 +111,15 @@ del {
   text-decoration: line-through;
 }
 
+.first-line-indent {
+  text-indent: 0.25in;
+}
+
 h1 {
   display:block;
   font-family:Century-Expanded-Bold;
   font-size:12pt;
-  font-weight:bold;
+  font-weight:normal;
   text-decoration:underline;
   text-transform:uppercase;
 }
@@ -124,7 +128,7 @@ h2 {
   display:block;
   font-family:Century-Expanded-Bold;
   font-size:12pt;
-  font-weight:bold;
+  font-weight:normal;
   text-transform:uppercase;
 }
 
@@ -132,7 +136,7 @@ h3 {
   display:block;
   font-family:Century-Expanded-Bold;
   font-size:12pt;
-  font-weight:bold;
+  font-weight:normal;
   font-variant:small-caps;
   text-transform:capitalize;
 }
@@ -142,7 +146,7 @@ h4 {
   font-family:Century-Expanded-Bold;
   font-size:12pt;
   font-variant:small-caps;
-  font-weight:bold;
+  font-weight:normal;
 }
 
 h5 {
@@ -157,7 +161,7 @@ h6 {
   font-family:Century-Expanded-Italic;
   font-size:12pt;
   font-variant:normal;
-  font-weight:bold;
+  font-weight:100;
 }
 
 i {
@@ -234,3 +238,6 @@ table.noDownRule tr {
   border-bottom: 1pt solid black;
 }
 
+ul {
+  padding-inline-start:0.0in;
+}
